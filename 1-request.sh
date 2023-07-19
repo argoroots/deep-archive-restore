@@ -4,5 +4,5 @@ aws s3api list-objects-v2 --bucket $1 --output text --query "Contents[?StorageCl
 
 while read i; do
   echo "$i"
-  aws s3api restore-object --bucket $1 --key "$i" --restore-request '{"Days":25,"GlacierJobParameters":{"Tier":"Bulk"}}'
+  aws s3api restore-object --bucket $1 --key "$i" --restore-request '{"Days":30,"GlacierJobParameters":{"Tier":"Bulk"}}'
 done <request.txt
