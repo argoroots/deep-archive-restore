@@ -1,6 +1,6 @@
 Restore files from *Glacier Deep Archive* to *Glacier Instant Retrieval*.
 
-1. Make restore requests for files in *Glacier Deep Archive* storage class:
+1. Submit a restore request for *Glacier Deep Archive* storage class files:
     ```bash
     ./1-request.sh <BUCKET-NAME>
     ```
